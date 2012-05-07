@@ -1,0 +1,46 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{times}
+
+\usetheme{AGH}
+
+\title[Mobilne zastosowania rozszerzonej rzeczywistości]{Mobilne zastosowania rozszerzonej rzeczywistości}
+
+\author[B. Bułat, T. Drzewiecki]{Bartłomiej Bułat, Tomasz Drzewiecki}
+
+\date[2012]{11.05.2012}
+
+\institute[AGH]
+{Wydział EAIiE\\ 
+Katedra Automatyki
+}
+
+\setbeamertemplate{itemize item}{$\maltese$}
+
+\begin{document}
+
+{
+%\usebackgroundtemplate{\includegraphics[width=\paperwidth]{titlepage}} % wersja angielska
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{titlepagepl}} % wersja polska
+ \begin{frame}
+   \titlepage
+ \end{frame}
+}
+
+%---------------------------------------------------------------------------
+
+\begin{frame}
+  \frametitle{Spis treści}
+  \tableofcontents[hidesubsections]
+\end{frame}
+
+\newcommand{\nextoc}{%
+  \begin{frame}\frametitle{Spis treści}\tableofcontents[hidesubsections]\end{frame}}
+
+\include{tekst}
+
+\end{document}
+
